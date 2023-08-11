@@ -1,0 +1,11 @@
+.wrapper{
+
+font-size: 32px;
+color: var(--color-white);    
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-weight: 600;
+
+}
