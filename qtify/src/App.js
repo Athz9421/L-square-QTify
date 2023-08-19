@@ -1,13 +1,18 @@
-import Card from "./component/Card/Card";
+import { useEffect, useState } from "react";
 import Hero from "./component/Hero/Hero";
 import Navbar from "./component/Navbar/Navbar";
+import TopAlbumSection from "./component/section/TopAlbumSection";
 
-function App() {
+
+const App =()=> {
+
+
   return (
     <>
     <Navbar/>
     <Hero/>
-    <Card/>
+   <TopAlbumSection/>
+
     </>
   );
 }

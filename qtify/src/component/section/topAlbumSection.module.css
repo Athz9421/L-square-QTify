@@ -1,0 +1,33 @@
+.wrapper{
+
+margin: 18px;
+border: 2px solid red;
+
+}
+.text{
+
+    display: flex;
+    justify-content: space-between;
+   margin-bottom: 18px;
+font-size: 20px;
+font-weight: 600;
+line-height: normal;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+gap: 24px;
+
+
+}
+.items{
+    
+}
+.text p:first-child {
+    color: var(--color-white);
+}
+.text p:last-child {
+    color: var(--color-primary);
+    cursor: pointer;
+}
