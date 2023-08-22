@@ -1,7 +1,8 @@
 .wrapper{
 
-margin: 18px;
-border: 2px solid red;
+margin: auto;
+width: 1353px;
+
 
 }
 .text{
@@ -17,7 +18,7 @@ line-height: normal;
 .container{
     display: flex;
     flex-wrap: wrap;
-gap: 24px;
+gap: 35px;
 
 
 }
@@ -30,4 +31,13 @@ gap: 24px;
 .text p:last-child {
     color: var(--color-primary);
     cursor: pointer;
+}
+.buttons{
+position: absolute;
+top:50%;
+z-index: 2;
+width: 100%;
+display: flex;
+justify-content: space-between;
+
 }

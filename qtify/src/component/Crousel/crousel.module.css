@@ -1,0 +1,19 @@
+.wrapper{
+    position: relative;
+
+}
+.leftNavigation{
+position: absolute;
+top:40%;
+
+z-index: 2;
+
+
+}
+.rightnavigation{
+    position: absolute;
+    top:40%;
+    right: 10px;
+    z-index: 2;
+
+}

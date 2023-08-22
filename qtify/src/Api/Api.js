@@ -15,3 +15,16 @@ try {
 
 
 }
+export const  fetchNewAlbums= async ()=>{
+
+try {
+  const res= await axios.get(`${BACKEND_ENDPOINT}/albums/new`) ; 
+ 
+    return res.data;
+    
+} catch (error) {
+    console.error(error);
+}
+
+
+}
