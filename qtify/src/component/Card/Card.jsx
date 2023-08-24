@@ -22,7 +22,22 @@ const Card = ({ data, type }) => {
           </Tooltip>
         );
       }
-
+case "song":{
+const {image,title,likes}=data;
+return(
+  <div className={styles.wrapper}>
+  <div className={styles.card}>
+    <img src={image} alt="img" />
+    <div className={styles.banner}>
+    <Chip label={`${likes} likes`} size="small" className={styles.chip} />
+    </div>
+  </div>
+  <div className={styles.titlewrappe}>
+    <p>{title}</p>
+  </div>
+</div>
+)  ;
+}
 default :
 return <></>
 

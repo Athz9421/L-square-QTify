@@ -15,5 +15,7 @@ z-index: 2;
     top:40%;
     right: 10px;
     z-index: 2;
+    transform: translateY(-50%);
+  
 
 }
