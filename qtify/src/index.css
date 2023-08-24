@@ -26,3 +26,6 @@ body{
 .css-1aquho2-MuiTabs-indicator {
   background-color: var(--color-primary) !important;
 }
+ .swiper-slide{
+    width: auto !important;
+  } 
