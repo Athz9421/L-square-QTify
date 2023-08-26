@@ -83,17 +83,17 @@ setfilteredData(filter);
   
   return (
     <>
-    <Navbar/>
+    <Navbar data={[...topAlbumsData,...NewAlbumsData]}/>
     <Hero/>
     <div className={styles.sectionWrapper}> 
 
 <Section title="Top Albums" data={topAlbumsData} type="album" />
-<hr/>
+
 <Section title="New Albums" data={NewAlbumsData} type="album" />
-<hr/>
+
 <Section title="New Songss" data={filteredDataValue} type="song" value={value} handleChange={handleChange} genresData={genresData} />
     </div>
-    <hr/>
+ 
     <div className={styles.accordienWrapper}>
 <h1>FAQs</h1>
     <BasicAccordion faqQuestions={faqQuestions}/>

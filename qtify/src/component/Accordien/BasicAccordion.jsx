@@ -8,7 +8,7 @@ import { indigo } from "@mui/material/colors";
 
 export default function BasicAccordion({ faqQuestions }) {
   return (
-    <div>
+    <div >
       {faqQuestions.map((ele,ind) => {
         return (
           <Accordion key={ind}>

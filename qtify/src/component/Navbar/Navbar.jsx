@@ -5,11 +5,11 @@ import style from './navbar.module.css'
 import SearchBar from '../SearchBar/SearchBar'
 
 
-const Navbar = () => {
+const Navbar = ({data}) => {
   return (
 <nav className={style.navbar}> 
   <Logo/>
-<SearchBar placeholder="Search a album of your choice"/>
+<SearchBar placeholder="Search a album of your choice" data={data}/>
 <Button childern="Give Feedback"/>
 </nav>
   )

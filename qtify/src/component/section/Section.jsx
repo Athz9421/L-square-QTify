@@ -12,7 +12,7 @@ setcarouselToggl(!carouselToggle);
 
     }
   return (
-    <div>
+    <div style={{borderBottom:"solid 2px green", paddingBottom:"10px"}}>
       <div className={styles.header}>
         <h3>{title}</h3>
          <h4 className={styles.toggleText} onClick={handalToggle}>{type!=="song" && (carouselToggle?"Show All" :"Collapes")}</h4>
