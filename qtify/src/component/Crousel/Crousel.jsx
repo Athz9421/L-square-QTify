@@ -18,7 +18,7 @@ return <></>
 const Crousel = ({data,RenderCardCompoent}) => {
   return (
     <div className={styles.wrapper}>
-      <Swiper initialSlide={0} modules={{Navigation} } slidesPerView={7} spaceBetween={40} allowTouchMove>
+      <Swiper initialSlide={0} modules={{Navigation} } slidesPerView="auto" spaceBetween={40} allowTouchMove>
       <Controls data={data}/> 
       <CrouselLeftNavigation/>
       <CrouselRightNavigation/>

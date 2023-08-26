@@ -5,7 +5,11 @@ import TopAlbumSection from "./component/section/TopAlbumSection";
 import MainAlbumSection from "./component/section/MainAlbumSection";
 import Section from "./component/section/Section";
 import styles from './app.module.css'
-import { fetchCategory, fetchNewAlbums, fetchSongs, fetchTopAlbums } from "./Api/Api";
+import { faqQuestions, fetchCategory, fetchNewAlbums, fetchSongs, fetchTopAlbums } from "./Api/Api";
+import BasicAccordion from "./component/Accordien/BasicAccordion";
+import SongPlayer from "./component/SoundPlayer/SongPlayer";
+
+
 
 
 const App =()=> {
@@ -84,11 +88,18 @@ setfilteredData(filter);
     <div className={styles.sectionWrapper}> 
 
 <Section title="Top Albums" data={topAlbumsData} type="album" />
+<hr/>
 <Section title="New Albums" data={NewAlbumsData} type="album" />
+<hr/>
 <Section title="New Songss" data={filteredDataValue} type="song" value={value} handleChange={handleChange} genresData={genresData} />
-
     </div>
-
+    <hr/>
+    <div className={styles.accordienWrapper}>
+<h1>FAQs</h1>
+    <BasicAccordion faqQuestions={faqQuestions}/>
+    </div>
+    <hr />
+<SongPlayer/>
     </>
   );
 }

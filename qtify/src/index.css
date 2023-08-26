@@ -29,3 +29,18 @@ body{
  .swiper-slide{
     width: auto !important;
   } 
+  .MuiAccordion-root{
+    background-color: var(--color-black) !important;
+    color: var(--color-white) !important;
+    border: solid 1px white;
+    border-radius:0px 0px 10px 10px;
+    width: 62vw !important;
+    margin-top: 12px;
+  }
+  .MuiAccordionSummary-expandIconWrapper{
+    color: var(--color-primary) !important;
+  }
+  .MuiAccordionDetails-root{
+    background-color: var(--color-white) !important;
+    color: var(--color-black) !important;
+  }
